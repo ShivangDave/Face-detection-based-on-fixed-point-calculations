@@ -9,7 +9,7 @@ Placeholder text.
 
    Optional: 
    - Copy image(s) you want to use in 'img' folder.
-   - If you want to automate it, rename the image to a number and change for loop in exec.py accordingly.
+   - If you want to automate the script, rename the image to a number and change for loop in exec.py accordingly.
 
 4) Use following command(s):
 
