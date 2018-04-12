@@ -15,12 +15,12 @@
 
 import os, sys, math, time, decimal
 from PIL import Image
-import parse as parse
-import integral as integral
-import detect as detector
-import draw as draw
-import matrix as matrix
 import time
+from core import parse as parse
+from core import integral as integral
+from core import detect as detector
+from core import draw as draw
+from core import matrix as matrix
 
 def exec_(image_name):
     start_t = time.time()
