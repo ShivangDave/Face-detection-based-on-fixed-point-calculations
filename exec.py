@@ -23,6 +23,7 @@ from core import draw as draw
 from core import matrix as matrix
 
 def exec_(image_name):
+    print('Please wait, Trying to detect ...')
     start_t = time.time()
     input_image = Image.open(image_name)
     width, height = input_image.size
@@ -40,7 +41,7 @@ def exec_(image_name):
     result = detector.detect(matrix_one,matrix_two,width,height,classifier)
     list_output = draw.draw(input_image,result)
     print('\nTotal Faces detected in %s: %d'%(image_name,len(list_output)))
-    print('Total time: %s' %(round(time.time() - start_t,2)))
+    print('Total time: %ss' %(round(time.time() - start_t,2)))
 
 if len(sys.argv) != 2:
     for i in range(1,6):

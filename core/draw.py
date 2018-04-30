@@ -19,10 +19,10 @@ def draw(input_image,result):
     for obj in list_output:
         X,Y,W,H = obj
         draw_context = ImageDraw.Draw(input_image)
-        draw_context.line((X,Y,X,Y+H),(0,255,0,255),1)
-        draw_context.line((X,Y+1/2,X+W,Y+1/2),(0,255,0,255),1)
-        draw_context.line((X+W,Y,X+W,Y+H),(0,255,0,255),1)
-        draw_context.line((X,Y+H-1/2,X+W,Y+H-1/2),(0,255,0,255),1)
+        draw_context.line((X,Y,X,Y+H),(0,255,0,255),4)
+        draw_context.line((X,Y+1/2,X+W,Y+1/2),(0,255,0,255),4)
+        draw_context.line((X+W,Y,X+W,Y+H),(0,255,0,255),4)
+        draw_context.line((X,Y+H-1/2,X+W,Y+H-1/2),(0,255,0,255),4)
         del draw_context
     input_image.show()
     return list_output
